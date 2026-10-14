@@ -1,0 +1,11 @@
+[
+  { "slug": "downtown-dubai", "name": "Downtown Dubai", "status": "directory-only", "sourceUrl": null },
+  { "slug": "dubai-marina", "name": "Dubai Marina", "status": "directory-only", "sourceUrl": null },
+  { "slug": "palm-jumeirah", "name": "Palm Jumeirah", "status": "directory-only", "sourceUrl": null },
+  { "slug": "business-bay", "name": "Business Bay", "status": "directory-only", "sourceUrl": null },
+  { "slug": "dubai-hills-estate", "name": "Dubai Hills Estate", "status": "directory-only", "sourceUrl": null },
+  { "slug": "jumeirah-village-circle", "name": "Jumeirah Village Circle", "status": "directory-only", "sourceUrl": null },
+  { "slug": "dubai-south", "name": "Dubai South", "status": "source-location", "sourceUrl": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113" },
+  { "slug": "dubai-maritime-city", "name": "Dubai Maritime City", "status": "source-location", "sourceUrl": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114" },
+  { "slug": "arabian-ranches", "name": "Arabian Ranches", "status": "directory-only", "sourceUrl": null }
+]

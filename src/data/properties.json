@@ -1,0 +1,995 @@
+[
+  {
+    "id": "riva-residence",
+    "slug": "riva-residence",
+    "name": "Riva Residence",
+    "location": {
+      "city": "Dubai",
+      "community": "Dubai Maritime City",
+      "country": "United Arab Emirates"
+    },
+    "price": {
+      "min": 2530000,
+      "max": 6800000,
+      "currency": "AED",
+      "basis": "Currently released units reported by Impala Real Estate; not the original project launch price"
+    },
+    "pricingSources": [
+      {
+        "type": "project-range",
+        "label": "Published project price range",
+        "min": 692100,
+        "max": 1580400,
+        "currency": "USD",
+        "sourceUrl": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "checkedAt": "2026-10-14",
+        "note": "The source page displays this project range in USD. This is not a unit-specific resale quote."
+      },
+      {
+        "type": "available-units",
+        "label": "Currently released-unit price range",
+        "min": 2530000,
+        "max": 6800000,
+        "currency": "AED",
+        "sourceUrl": "https://www.impalarealestate.com/projects/riva-residence/",
+        "checkedAt": "2026-10-08",
+        "note": "Impala reports available homes in this range and states that availability and prices were checked 8 Oct 2026; confirm current inventory directly."
+      }
+    ],
+    "priceCheckedAt": "2026-10-08",
+    "sources": [
+      {
+        "label": "Destination by LeadingRE",
+        "url": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "checkedAt": "2026-10-14",
+        "note": "Published USD project range, 1–3 bedrooms, 2–5 bathrooms, freehold tenure and 25-storey description."
+      },
+      {
+        "label": "Impala Real Estate",
+        "url": "https://www.impalarealestate.com/projects/riva-residence/",
+        "checkedAt": "2026-10-08",
+        "note": "Reports released-unit pricing, 1–3 bedroom layouts, 956–3,091 sq ft available sizes, ready-to-move status, payment options and amenities. Availability and pricing may change."
+      },
+      {
+        "label": "Vakson Development",
+        "url": "https://vaksondevelopment.com/property/riva-residence",
+        "checkedAt": "2026-10-14",
+        "note": "Official project page; exposes two MP4 video references. Media reuse permission is not stated."
+      }
+    ],
+    "bedrooms": {
+      "min": 1,
+      "max": 3
+    },
+    "bathrooms": {
+      "min": 2,
+      "max": 5
+    },
+    "area": {
+      "min": 956,
+      "max": 3091,
+      "unit": "sq ft"
+    },
+    "propertyType": "Residential apartments",
+    "buildingInfo": "25 storeys",
+    "listingType": "sale",
+    "developerId": "vakson",
+    "tenure": "Freehold",
+    "completionDate": "November 2025 (reported by Impala Real Estate)",
+    "constructionStatus": "Ready to move in (reported by Impala Real Estate)",
+    "paymentPlan": "Impala lists 10/30/60, 40/60 and 30/70 plan options; confirm current terms with the seller.",
+    "amenities": [
+      "Fitness centre",
+      "Swimming pool",
+      "Landscaped leisure spaces",
+      "Secure parking",
+      "24-hour security",
+      "Waterfront setting"
+    ],
+    "images": [
+      {
+        "id": "riva-demo-dubai-skyline",
+        "url": "/images/properties/demo/dubai-skyline.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative Dubai skyline demo image, not Riva Residence",
+        "sequence": 0,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-interior-01",
+        "url": "/images/properties/demo/apartment-interior-01.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative apartment interior demo image, not Riva Residence",
+        "sequence": 1,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-interior-02",
+        "url": "/images/properties/demo/apartment-interior-02.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative contemporary apartment interior demo image, not Riva Residence",
+        "sequence": 2,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-interior-03",
+        "url": "/images/properties/demo/apartment-interior-03.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative bright apartment interior demo image, not Riva Residence",
+        "sequence": 3,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-interior-04",
+        "url": "/images/properties/demo/apartment-interior-04.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative luxury apartment living room demo image, not Riva Residence",
+        "sequence": 4,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-interior-05",
+        "url": "/images/properties/demo/apartment-interior-05.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative modern apartment interior demo image, not Riva Residence",
+        "sequence": 5,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-exterior-01",
+        "url": "/images/properties/demo/residential-exterior-01.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600573472550-8090b5e0745e",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative residential exterior demo image, not Riva Residence",
+        "sequence": 6,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-exterior-02",
+        "url": "/images/properties/demo/residential-exterior-02.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative contemporary residence exterior demo image, not Riva Residence",
+        "sequence": 7,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-pool",
+        "url": "/images/properties/demo/residential-pool-01.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative residence and pool demo image, not Riva Residence",
+        "sequence": 8,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-interior-06",
+        "url": "/images/properties/demo/apartment-interior-08.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative modern residence interior demo image, not Riva Residence",
+        "sequence": 9,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-interior-07",
+        "url": "/images/properties/demo/apartment-interior-07.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600566752355-35792bedcfea",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative apartment interior demo image, not Riva Residence",
+        "sequence": 10,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "riva-demo-exterior-03",
+        "url": "/images/properties/demo/residential-exterior-03.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Riva Residence.",
+        "alt": "Illustrative modern residence exterior demo image, not Riva Residence",
+        "sequence": 11,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "d44137785a6cf00b",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b62272088.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 1",
+        "sequence": 0,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "35bceee6568ecf7c",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b5f76e5b0.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 2",
+        "sequence": 1,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "fe852a6846482d87",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b73b95563.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 3",
+        "sequence": 2,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "11412c0664a38bdc",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b71214c1b.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 4",
+        "sequence": 3,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "3d2ced446800e6d8",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b71bcc09b.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 5",
+        "sequence": 4,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "190b653539ff9197",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b74705b49.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 6",
+        "sequence": 5,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "15ddc17de8f67ee8",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931ba660022d.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 7",
+        "sequence": 6,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "38cc522de6f9418f",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931bb3c1c4fc.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 8",
+        "sequence": 7,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "77b9af944b60025a",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931bb16cb8cb.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 9",
+        "sequence": 8,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "e121064c0bc973ab",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931ba719a6be.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 10",
+        "sequence": 9,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "f00afd2c57ab64f4",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931bb247bf63.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 11",
+        "sequence": 10,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "d98c80fed0c98c05",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931ba7a8e1a6.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 12",
+        "sequence": 11,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "363660517dcc3511",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931ba885d52c.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 13",
+        "sequence": 12,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "1a44307061f0ed61",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931ba964da9a.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 14",
+        "sequence": 13,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "198a33e6258ee2af",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931bb0955f56.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 15",
+        "sequence": 14,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "89da3ba8b42d63e0",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931bb2f51858.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 16",
+        "sequence": 15,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "0a1df66c9bde7b14",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b7296e053.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 17",
+        "sequence": 16,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "ec20fc35689b09e2",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b6150b2c3.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 18",
+        "sequence": 17,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "fcab3df9e0ee4a8a",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/114/photos/6931b60358ea8.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 19",
+        "sequence": 18,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      }
+    ],
+    "videos": [
+      {
+        "id": "riva-vakson-hero-video",
+        "url": "https://vaksondevelopment.com/storage/public/01K85ND712V4CTYCA2QMZAE6TX.mp4",
+        "sourcePage": "https://vaksondevelopment.com/property/riva-residence",
+        "caption": "Official developer video shown on the Riva Residence project page.",
+        "alt": "Riva Residence official developer video",
+        "sequence": 0,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "verified"
+      },
+      {
+        "id": "riva-vakson-project-video",
+        "url": "https://vaksondevelopment.com/storage/public/01K0P7ND2ASB9H6R7T73PP19CX.mp4",
+        "sourcePage": "https://vaksondevelopment.com/property/riva-residence",
+        "caption": "Additional official developer video linked from the Riva Residence project page.",
+        "alt": "Additional Riva Residence official developer video",
+        "sequence": 1,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "verified"
+      },
+      {
+        "id": "riva-demo-apartment-video",
+        "url": "/videos/properties/demo/apartment-building-drone-demo.mp4",
+        "sourcePage": "https://www.pexels.com/video/the-building-where-the-apartment-is-located-16235833/",
+        "caption": "Illustrative demo video by HUAHIN PILOT LAND & REAL ESTATE DRONER, licensed through Pexels; filmed elsewhere, not Riva Residence.",
+        "alt": "Illustrative apartment-building drone video, not Riva Residence",
+        "sequence": 12,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      }
+    ],
+    "summary": "A waterfront apartment development in Dubai Maritime City. Destination by LeadingRE describes a 25-storey freehold residential building with one- to three-bedroom layouts. Impala Real Estate separately reports currently released units, ready-to-move status and unit sizes; those offers and details should be reconfirmed before enquiry.",
+    "sourceUrl": "https://www.destinationsbyleadingre.com/property/riva-residence-for-sale-in-dubai-114",
+    "developerProfileUrl": null,
+    "collectedAt": "2026-10-14",
+    "verifiedAt": null,
+    "priceVerifiedAt": null,
+    "status": "unverified"
+  },
+  {
+    "id": "timber-terrace",
+    "slug": "timber-terrace",
+    "name": "Timber Terrace",
+    "location": {
+      "city": "Dubai",
+      "community": "Dubai South",
+      "country": "United Arab Emirates"
+    },
+    "price": {
+      "min": 300600,
+      "max": 585000,
+      "currency": "USD",
+      "basis": "Published development price range"
+    },
+    "pricingSources": [
+      {
+        "type": "project-range",
+        "label": "Published project price range",
+        "min": 300600,
+        "max": 585000,
+        "currency": "USD",
+        "sourceUrl": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "checkedAt": "2026-10-14",
+        "note": "The original listing displays this development price range in USD; it is not a quote for an individual resale unit."
+      }
+    ],
+    "priceCheckedAt": "2026-10-14",
+    "sources": [
+      {
+        "label": "Destination by LeadingRE",
+        "url": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "checkedAt": "2026-10-14",
+        "note": "Publishes the USD project range, 1–3 bedrooms, 2–4 bathrooms, freehold tenure, 2027 completion and identifies Vakson Group as developer."
+      },
+      {
+        "label": "Vakson Development",
+        "url": "https://vaksondevelopment.com/property/timber-terrace-modern-homes-in-dubai-south",
+        "checkedAt": "2026-10-14",
+        "note": "Official project page; exposes two MP4 video references. Media reuse permission is not stated."
+      }
+    ],
+    "bedrooms": {
+      "min": 1,
+      "max": 3
+    },
+    "bathrooms": {
+      "min": 2,
+      "max": 4
+    },
+    "area": {
+      "min": null,
+      "max": null,
+      "unit": null
+    },
+    "propertyType": "Residential apartments",
+    "buildingInfo": "G+7 storeys",
+    "listingType": "sale",
+    "developerId": "vakson",
+    "tenure": "Freehold",
+    "completionDate": "2027",
+    "constructionStatus": null,
+    "paymentPlan": null,
+    "amenities": [],
+    "images": [
+      {
+        "id": "timber-demo-exterior-01",
+        "url": "/images/properties/demo/residential-exterior-04.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1613977257363-707ba9348227",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative modern residential exterior demo image, not Timber Terrace",
+        "sequence": 0,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-exterior-02",
+        "url": "/images/properties/demo/residential-exterior-03.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative modern home exterior demo image, not Timber Terrace",
+        "sequence": 1,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-exterior-03",
+        "url": "/images/properties/demo/residential-exterior-02.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative contemporary residence exterior demo image, not Timber Terrace",
+        "sequence": 2,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-interior-01",
+        "url": "/images/properties/demo/apartment-interior-01.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative apartment interior demo image, not Timber Terrace",
+        "sequence": 3,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-interior-02",
+        "url": "/images/properties/demo/apartment-interior-02.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative contemporary apartment interior demo image, not Timber Terrace",
+        "sequence": 4,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-interior-03",
+        "url": "/images/properties/demo/apartment-interior-03.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative bright apartment interior demo image, not Timber Terrace",
+        "sequence": 5,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-interior-04",
+        "url": "/images/properties/demo/apartment-interior-05.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative apartment interior demo image, not Timber Terrace",
+        "sequence": 6,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-interior-05",
+        "url": "/images/properties/demo/apartment-interior-06.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600607687644-c7171b42498f",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative minimalist apartment interior demo image, not Timber Terrace",
+        "sequence": 7,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-exterior-04",
+        "url": "/images/properties/demo/residential-exterior-01.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600573472550-8090b5e0745e",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative residential exterior demo image, not Timber Terrace",
+        "sequence": 8,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-interior-06",
+        "url": "/images/properties/demo/apartment-interior-07.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600566752355-35792bedcfea",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative modern apartment interior demo image, not Timber Terrace",
+        "sequence": 9,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-interior-07",
+        "url": "/images/properties/demo/apartment-interior-08.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative apartment interior demo image, not Timber Terrace",
+        "sequence": 10,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "timber-demo-pool",
+        "url": "/images/properties/demo/residential-pool-01.jpg",
+        "sourcePage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
+        "caption": "Illustrative demo photo from Unsplash under its free-use license; not a photograph of Timber Terrace.",
+        "alt": "Illustrative residence and pool demo image, not Timber Terrace",
+        "sequence": 11,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      },
+      {
+        "id": "5babc68ac4756639",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad3a0aaa0.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 1",
+        "sequence": 0,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "a9e7d8afc7073934",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad0c98dae.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 2",
+        "sequence": 1,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "06e276369fb94975",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad2389722.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 3",
+        "sequence": 2,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "a6f37f0aa736c93a",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931adfd82ef8.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 4",
+        "sequence": 3,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "9efb020b0384cec1",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ae0714d83.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 5",
+        "sequence": 4,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "31d19e0c0d812465",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931adf3e8576.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 6",
+        "sequence": 5,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "95126889d2284b47",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ae2cdee1c.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 7",
+        "sequence": 6,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "abd805f495f71d7f",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931addddd3ed.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 8",
+        "sequence": 7,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "302e7ed509044a6f",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ae3a9ff9e.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 9",
+        "sequence": 8,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "ccbfa07d7113b2dd",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ae378a2f5.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 10",
+        "sequence": 9,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "d06894393ae493d9",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931adea731f8.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 11",
+        "sequence": 10,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "53d73dab3016b2df",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad56b8ccd.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 12",
+        "sequence": 11,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "ad36662dd141cd28",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931acff426e8.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 13",
+        "sequence": 12,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "bf96810156c5ad83",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad928ed08.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 14",
+        "sequence": 13,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "0c1124b0c828dff0",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931adba062b6.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 15",
+        "sequence": 14,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "7cd6cdbd7f9e6128",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad6264a64.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 16",
+        "sequence": 15,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "e689e0677b39252b",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad4b59736.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 17",
+        "sequence": 16,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "5acc7d59e78d4ca6",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad74987d0.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 18",
+        "sequence": 17,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "e2f81f054760fed5",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ada5c5102.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 19",
+        "sequence": 18,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "9258615f6550d45f",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931adaf93ba7.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 20",
+        "sequence": 19,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "976de8e5dcd5f2b7",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931adc3d9a78.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 21",
+        "sequence": 20,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "d3036083e553231b",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ae475be8a.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 22",
+        "sequence": 21,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "52c04635718692d3",
+        "url": "https://www.destinationsbyleadingre.com/storage/properties/113/photos/6931ad1773242.jpg",
+        "sourcePage": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+        "caption": null,
+        "alt": "1 bed Residential Apartments Building For Sale in Dubai,  - thumb 23",
+        "sequence": 22,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "unverified"
+      }
+    ],
+    "videos": [
+      {
+        "id": "timber-terrace-vakson-hero-video",
+        "url": "https://vaksondevelopment.com/storage/public/01K7HDFZ9QCGP70X8KATH23560.mp4",
+        "sourcePage": "https://vaksondevelopment.com/property/timber-terrace-modern-homes-in-dubai-south",
+        "caption": "Official developer video shown on the Timber Terrace project page.",
+        "alt": "Timber Terrace official developer video",
+        "sequence": 0,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "verified"
+      },
+      {
+        "id": "timber-terrace-vakson-modal-video",
+        "url": "https://vaksondevelopment.com/storage/public/01K7HDFZAYRFKT0XWAX8ADHRXR.mp4",
+        "sourcePage": "https://vaksondevelopment.com/property/timber-terrace-modern-homes-in-dubai-south",
+        "caption": "Official developer video reference used by the Timber Terrace page modal; content duplication with its hero reference has not been checked.",
+        "alt": "Timber Terrace official developer video",
+        "sequence": 1,
+        "downloadStatus": "not-downloaded",
+        "permissionStatus": "unknown",
+        "verificationStatus": "verified"
+      },
+      {
+        "id": "timber-demo-apartment-video",
+        "url": "/videos/properties/demo/apartment-building-drone-demo.mp4",
+        "sourcePage": "https://www.pexels.com/video/the-building-where-the-apartment-is-located-16235833/",
+        "caption": "Illustrative demo video by HUAHIN PILOT LAND & REAL ESTATE DRONER, licensed through Pexels; filmed elsewhere, not Timber Terrace.",
+        "alt": "Illustrative apartment-building drone video, not Timber Terrace",
+        "sequence": 12,
+        "downloadStatus": "downloaded",
+        "permissionStatus": "authorized",
+        "verificationStatus": "unverified",
+        "illustrative": true
+      }
+    ],
+    "summary": "A seven-storey residential apartment development in Dubai South by Vakson Group. The original listing advertises one- to three-bedroom homes and lists a 2027 completion date. Confirm live availability and unit-specific details with the seller.",
+    "sourceUrl": "https://www.destinationsbyleadingre.com/property/timber-terrace-for-sale-in-dubai-113",
+    "developerProfileUrl": null,
+    "collectedAt": "2026-10-14",
+    "verifiedAt": null,
+    "priceVerifiedAt": null,
+    "status": "unverified"
+  }
+]
