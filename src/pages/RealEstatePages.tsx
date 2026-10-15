@@ -4,7 +4,7 @@ import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, Check, ChevronDown, Map
 import InquiryForm from "@/components/InquiryForm";
 import PropertyCard from "@/components/PropertyCard";
 import { brand } from "@/data/brand";
-import { developers, formatPrice, formatPriceSource, getMediaAvailabilityMessage, getPrimaryPricingSource, getProperty, getPublishableMedia, locations, properties, type PropertyMedia, type PropertyRecord } from "@/data/properties";
+import {  formatPrice, formatPriceSource, getMediaAvailabilityMessage, getPrimaryPricingSource, getProperty, getPublishableMedia, locations, properties, type PropertyMedia, type PropertyRecord } from "@/data/properties";
 
 const heroImage = "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2200&q=85";
 const interiorImage = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85";
@@ -224,7 +224,6 @@ type SearchFilters = {
   maxPrice: string;
   currency: string;
   beds: string;
-  developer: string;
   status: string;
   sort: string;
 };
@@ -237,7 +236,6 @@ const initialFilters = (params: URLSearchParams): SearchFilters => ({
   maxPrice: "",
   currency: params.get("currency") ?? "",
   beds: "",
-  developer: "",
   status: "",
   sort: "recent",
 });
@@ -248,7 +246,7 @@ export const PropertiesPage = () => {
   const [params, setParams] = useSearchParams();
   const [filters, setFilters] = useState<SearchFilters>(() => initialFilters(params));
   const [page, setPage] = useState(1);
-  const pageSize = 6;
+  const pageSize = 10;
   const filtered = useMemo(() => {
     const query = filters.q.trim().toLowerCase();
     const result = properties.filter((property) => {
@@ -256,7 +254,6 @@ export const PropertiesPage = () => {
       const matchesType = !filters.type || property.listingType === filters.type;
       const matchesPropertyType = !filters.propertyType || property.propertyType === filters.propertyType;
       const matchesBeds = !filters.beds || (property.bedrooms.min != null && property.bedrooms.min >= Number(filters.beds));
-      const matchesDeveloper = !filters.developer || property.developerId === filters.developer;
       const matchesStatus = !filters.status || (filters.status === "ready" ? Boolean(property.constructionStatus?.toLowerCase().includes("ready")) : !property.constructionStatus?.toLowerCase().includes("ready"));
       const low = Number(filters.minPrice);
       const high = Number(filters.maxPrice);
@@ -266,7 +263,8 @@ export const PropertiesPage = () => {
       const amountFiltersHaveCurrency = !hasPriceFilter || Boolean(filters.currency);
       const matchesMin = !filters.minPrice || (amountFiltersHaveCurrency && priceIsKnown && (property.price.max ?? property.price.min ?? 0) >= low);
       const matchesMax = !filters.maxPrice || (amountFiltersHaveCurrency && priceIsKnown && (property.price.min ?? property.price.max ?? 0) <= high);
-      return matchesQuery && matchesType && matchesPropertyType && matchesBeds && matchesDeveloper && matchesStatus && currencyMatches && matchesMin && matchesMax;
+      return matchesQuery && matchesType && matchesPropertyType && matchesBeds && matchesStatus &&
+        currencyMatches && matchesMin && matchesMax;
     });
     if (filters.sort === "price-asc" && filters.currency) result.sort((a, b) => (a.price.min ?? Number.MAX_VALUE) - (b.price.min ?? Number.MAX_VALUE));
     if (filters.sort === "price-desc" && filters.currency) result.sort((a, b) => (b.price.max ?? -1) - (a.price.max ?? -1));
@@ -286,9 +284,9 @@ export const PropertiesPage = () => {
   };
 
   return (
-    <main className="page-shell">
+    <main className="page-shell properties-shell">
       <PageMeta title="Dubai properties" description="Search source-attributed property records in Dubai, with clear verification status." />
-      <PageIntro eyebrow="The property register" title={<>A considered search<br /><em>starts with good information.</em></>} description="Explore records by area, property type and price. Details that have not been verified are labelled clearly." />
+      <h1 className="properties-title">Properties</h1>
       <div className="listing-layout">
         <aside className="filter-panel">
           <div className="filter-title"><span>Refine your search</span><button type="button" onClick={clear}>Clear all</button></div>
@@ -298,11 +296,10 @@ export const PropertiesPage = () => {
           <label className="filter-field">Price currency<select className={selectClass} value={filters.currency} onChange={(event) => update("currency", event.target.value)}><option value="">Choose currency</option>{[...new Set(properties.map((property) => property.price.currency).filter((currency): currency is string => Boolean(currency)))].sort().map((currency) => <option key={currency}>{currency}</option>)}</select></label>
           <div className="filter-field"><span>Price range{filters.currency ? ` (${filters.currency})` : ""}</span><div className="range-fields"><input aria-label={`Minimum price in ${filters.currency || "selected"} currency`} type="number" min="0" placeholder="Min" value={filters.minPrice} onChange={(event) => update("minPrice", event.target.value)} /><input aria-label={`Maximum price in ${filters.currency || "selected"} currency`} type="number" min="0" placeholder="Max" value={filters.maxPrice} onChange={(event) => update("maxPrice", event.target.value)} /></div><small>{filters.currency ? "Only source-listed prices in this currency match." : "Choose a currency before filtering by amount."}</small></div>
           <label className="filter-field">Bedrooms<select className={selectClass} value={filters.beds} onChange={(event) => update("beds", event.target.value)}><option value="">Any number</option>{["1", "2", "3", "4", "5"].map((n) => <option key={n} value={n}>{n}+</option>)}</select></label>
-          <label className="filter-field">Developer<select className={selectClass} value={filters.developer} onChange={(event) => update("developer", event.target.value)}><option value="">Any developer</option>{developers.map((developer) => <option key={developer.id} value={developer.id}>{developer.name}</option>)}</select></label>
           <label className="filter-field">Construction status<select className={selectClass} value={filters.status} onChange={(event) => update("status", event.target.value)}><option value="">Any status</option><option value="ready">Ready</option><option value="off-plan">Off-plan / other</option></select></label>
         </aside>
         <section className="results-panel" aria-live="polite">
-          <div className="results-toolbar"><p><strong>{filtered.length}</strong> {filtered.length === 1 ? "record" : "records"} <span>· Property facts shown as sourced</span></p><label>Sort by <select className={selectClass} value={filters.sort} onChange={(event) => update("sort", event.target.value)}><option value="recent">Recently collected</option><option value="name">Name</option><option value="price-asc" disabled={!filters.currency}>Price: low to high</option><option value="price-desc" disabled={!filters.currency}>Price: high to low</option></select></label></div>
+          <div className="results-toolbar"><p><strong>{filtered.length}</strong> {filtered.length === 1 ? "record" : "records"}{filtered.some((property) => property.illustrative) && <span> · {filtered.filter((property) => property.illustrative).length} clearly labelled fictional demo samples</span>}</p><label>Sort by <select className={selectClass} value={filters.sort} onChange={(event) => update("sort", event.target.value)}><option value="recent">Recently collected</option><option value="name">Name</option><option value="price-asc" disabled={!filters.currency}>Price: low to high</option><option value="price-desc" disabled={!filters.currency}>Price: high to low</option></select></label></div>
           {shown.length ? <div className="property-grid">{shown.map((property) => <PropertyCard key={property.id} property={property} />)}</div> : <div className="empty-state"><Search size={24} /><h2>No matching records</h2><p>{(filters.minPrice || filters.maxPrice) && !filters.currency ? "Choose a currency before filtering by a price amount." : "Try another area or remove filters. Records without published prices or specifications cannot match those filters."}</p><button className="button button-outline" onClick={clear}>Clear filters</button></div>}
           {pages > 1 && <div className="pagination"><button disabled={page === 1} onClick={() => setPage((n) => n - 1)}>Previous</button><span>Page {page} of {pages}</span><button disabled={page === pages} onClick={() => setPage((n) => n + 1)}>Next</button></div>}
         </section>
@@ -320,7 +317,6 @@ export const PropertyDetailPage = () => {
   const property = getProperty(slug);
   if (!property) return <NotFoundPage />;
   const related = properties.filter((item) => item.id !== property.id).slice(0, 3);
-  const developer = developers.find((item) => item.id === property.developerId);
   const media = getPublishableMedia(property);
   const primaryPricing = getPrimaryPricingSource(property);
 
@@ -328,6 +324,7 @@ export const PropertyDetailPage = () => {
     <main className="page-shell detail-shell">
       <PageMeta title={property.name} description={`${property.name}, ${property.location.community}. Listing details and source verification status.`} />
       <div className="breadcrumbs"><Link to="/">Home</Link><span>/</span><Link to="/properties">Properties</Link><span>/</span><span>{property.name}</span></div>
+      {property.illustrative && <div className="illustrative-disclaimer" role="note"><strong>Illustrative sample — not a real property listing</strong><p>This example property does not exist and is not available to buy or rent. Its location, price, size, features, dates and all other details are fictional and shown only to demonstrate the page.</p></div>}
       <div className="detail-heading">
         <div><Eyebrow>{property.location.city} · {property.location.country}</Eyebrow><h1>{property.name}</h1><p className="detail-location"><MapPin size={16} />{property.location.community}</p></div>
         <div className="detail-price">{property.price.min == null && property.price.max == null ? "Price not published · contact us for current pricing" : <>{formatPrice(property)}<small>{primaryPricing?.label ?? property.price.basis}{primaryPricing ? ` · source checked ${primaryPricing.checkedAt}` : ""}. Confirm current availability before enquiry.</small></>}</div>
@@ -350,8 +347,7 @@ export const PropertyDetailPage = () => {
           </div></section>
           {property.pricingSources.length > 0 && <section className="detail-section"><Eyebrow>Pricing by source</Eyebrow><h2>Published price information</h2><div className="pricing-source-list">{property.pricingSources.map((source) => <div className="pricing-source-item" key={`${source.type}-${source.sourceUrl}`}><div><strong>{formatPriceSource(source)}</strong><small>{source.label} · checked {source.checkedAt}</small><p>{source.note}</p></div><a href={source.sourceUrl} target="_blank" rel="noreferrer">View source <ArrowUpRight size={14} /></a></div>)}</div></section>}
           {property.amenities.length > 0 && <section className="detail-section"><Eyebrow>Features</Eyebrow><h2>Property features</h2><ul className="feature-list">{property.amenities.map((item) => <li key={item}><Check size={15} />{item}</li>)}</ul></section>}
-          <section className="source-panel"><span>Sources and verification</span>{property.sources.map((source) => <div className="source-reference" key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label} <ArrowUpRight size={14} /></a><small>Checked {source.checkedAt}. {source.note}</small></div>)}<small>Original source content and imagery belong to their respective rights holders. Photography references are not displayed without confirmed reuse permission.</small></section>
-          {developer && <section className="detail-section"><Eyebrow>Developer</Eyebrow><h2>{developer.name}</h2><p>{developer.overview ?? "No developer overview has been independently verified."}</p><Link to={`/developers/${developer.id}`} className="text-link">Developer profile <ArrowRight size={16} /></Link></section>}
+          {!property.illustrative && <section className="source-panel"><span>Sources and verification</span>{property.sources.map((source) => <div className="source-reference" key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label} <ArrowUpRight size={14} /></a><small>Checked {source.checkedAt}. {source.note}</small></div>)}<small>Original source content and imagery belong to their respective rights holders. Photography references are not displayed without confirmed reuse permission.</small></section>}
         </div>
         <aside className="detail-inquiry"><Eyebrow>Request information</Eyebrow><h2>Ask about<br /><em>{property.name}.</em></h2><p>Share what you are looking for and our team can follow up once an inquiry channel is configured.</p><InquiryForm propertyName={property.name} /></aside>
       </div>
@@ -385,24 +381,7 @@ export const LocationDetailPage = () => {
   </main>;
 };
 
-export const DevelopersPage = () => (
-  <main className="page-shell"><PageMeta title="Developers" description="Browse developer information connected to verified property records." />
-    <PageIntro eyebrow="Development partners" title={<>The people behind<br /><em>the places.</em></>} description="Developer names and profiles are included only when sourced. A directory profile does not imply an official partnership." />
-    {developers.length ? <div className="developer-grid">{developers.map((developer) => <Link className="developer-card" key={developer.id} to={`/developers/${developer.id}`}><Eyebrow>Developer profile</Eyebrow><h2>{developer.name}</h2><p>{developer.overview ?? "Overview not independently verified."}</p><span className="text-link">View profile <ArrowRight size={16} /></span></Link>)}</div> : <div className="empty-state"><h2>No developer profiles published</h2><p>Developer information will appear after its identity, profile and relationship to a listing have been confirmed.</p></div>}
-  </main>
-);
 
-export const DeveloperDetailPage = () => {
-  const { id = "" } = useParams();
-  const developer = developers.find((item) => item.id === id);
-  if (!developer) return <NotFoundPage />;
-  const associated = properties.filter((property) => property.developerId === id);
-  return <main className="page-shell"><PageMeta title={developer.name} description={`Developer profile for ${developer.name}.`} /><PageIntro eyebrow="Developer profile" title={<>{developer.name}<br /><em>Development portfolio.</em></>} description={developer.overview ?? "Developer overview has not been independently verified."} />
-    {developer.website && <a className="text-link" href={developer.website} target="_blank" rel="noreferrer">Developer website <ArrowUpRight size={15} /></a>}
-    {developer.sourceUrl && <p className="source-line">Profile source: <a href={developer.sourceUrl} target="_blank" rel="noreferrer">view source <ArrowUpRight size={13} /></a></p>}
-    <section className="section"><div className="section-heading"><div><Eyebrow>Portfolio</Eyebrow><h2>Associated <em>properties.</em></h2></div></div>{associated.length ? <div className="property-grid">{associated.map((property) => <PropertyCard key={property.id} property={property} />)}</div> : <div className="empty-state"><p>No properties are currently linked to this developer record.</p></div>}</section>
-  </main>;
-};
 
 export const AboutPage = () => (
   <main className="page-shell"><PageMeta title="About Aurevia" description="Learn about the Aurevia Estates Dubai approach to property discovery." />

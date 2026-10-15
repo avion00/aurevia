@@ -171,8 +171,6 @@ const validateRecords = (records) => {
       priceVerifiedAt: record.priceVerifiedAt ?? null,
       priceCheckedAt: record.priceCheckedAt ?? null,
       propertyType: record.propertyType ?? null,
-      developerId: record.developerId ?? null,
-      developerProfileUrl: record.developerProfileUrl ?? null,
       pricingSources,
       priceCheckedAt: record.priceCheckedAt ?? null,
       sources,
@@ -331,7 +329,6 @@ const pageImages = (html, sourceUrl, propertyId, propertyName) => {
       if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) continue;
       const imageUrl = url.toString();
       if (/facebook\.com\/tr|\/assets\/|\.svg(?:$|\?)|tracking|pixel|analytics/i.test(imageUrl)) continue;
-      if (/\/storage\/developers\//i.test(url.pathname)) continue;
       if (/\/storage\/floor[_-]?plans?\//i.test(url.pathname)) continue;
       const imageListingNumber = url.pathname.match(/\/storage\/properties\/(\d+)\/photos\//i)?.[1];
       if (listingNumber && imageListingNumber && listingNumber !== imageListingNumber) continue;

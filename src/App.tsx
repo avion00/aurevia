@@ -7,8 +7,6 @@ import Layout from "./components/Layout";
 import {
   AboutPage,
   ContactPage,
-  DeveloperDetailPage,
-  DevelopersPage,
   FaqPage,
   GuidesPage,
   HomePage,
@@ -37,8 +35,6 @@ const App = () => (
             <Route path="/properties/:slug" element={<PropertyDetailPage />} />
             <Route path="/locations" element={<LocationsPage />} />
             <Route path="/locations/:slug" element={<LocationDetailPage />} />
-            <Route path="/developers" element={<DevelopersPage />} />
-            <Route path="/developers/:id" element={<DeveloperDetailPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />

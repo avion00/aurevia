@@ -6,7 +6,6 @@ import { brand } from "@/data/brand";
 const links = [
   { to: "/properties", label: "Properties" },
   { to: "/locations", label: "Locations" },
-  { to: "/developers", label: "Developers" },
   { to: "/services", label: "Our approach" },
   { to: "/about", label: "About" },
 ];
